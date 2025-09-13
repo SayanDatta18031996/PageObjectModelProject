@@ -1,3 +1,0 @@
-19:01:37.765 IST [main] DEBUG com.testbot.base.Page - Log4j2 configuration loaded !!!
-19:01:59.154 IST [main] DEBUG com.testbot.base.Page - Click on login button in homepage
-19:02:03.193 IST [main] DEBUG com.testbot.base.Page - Quiting the Driver

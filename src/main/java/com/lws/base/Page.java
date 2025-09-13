@@ -108,7 +108,6 @@ public class Page {
 				driver = new ChromeDriver(options);
 				log.debug("Chrome launched");
 			} else if (browser.equalsIgnoreCase("edge")) {
-				driver=new EdgeDriver();
 				driver = new EdgeDriver();
 				log.debug("Edge launched");
 			}
@@ -120,7 +119,6 @@ public class Page {
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitWaitTimeInSeconds));
 			wait = new WebDriverWait(driver, Duration.ofSeconds(explicitWaitTimeInSeconds));
-
 			menu = new TopMenu(driver);
 		}
 	}
@@ -154,10 +152,10 @@ public class Page {
 	public void typing(String locator, String value) {
 		if (locator.endsWith("_css")) {
 			driver.findElement(By.cssSelector(OR.getProperty(locator))).sendKeys(value);
-			test.log(Status.INFO, "Typing on: " + locator + " Entered Value is: " + value);
+			//test.log(Status.INFO, "Typing on: " + locator + " Entered Value is: " + value);
 		} else if (locator.endsWith("_xpath")) {
 			driver.findElement(By.xpath(OR.getProperty(locator))).sendKeys(value);
-			test.log(Status.INFO, "Typing on: " + locator + " Entered Value is: " + value);
+			//test.log(Status.INFO, "Typing on: " + locator + " Entered Value is: " + value);
 		} else if (locator.endsWith("_class")) {
 			driver.findElement(By.className(OR.getProperty(locator))).sendKeys(value);
 		} else if (locator.endsWith("_id")) {
@@ -170,10 +168,10 @@ public class Page {
 	public void select(String locator, String value) {
 		if (locator.endsWith("_css")) {
 			dropDown = driver.findElement(By.cssSelector(OR.getProperty(locator)));
-			test.log(Status.INFO, "Typing on: " + locator + " Entered Value is: " + value);
+			//test.log(Status.INFO, "Typing on: " + locator + " Entered Value is: " + value);
 		} else if (locator.endsWith("_xpath")) {
 			dropDown = driver.findElement(By.xpath(OR.getProperty(locator)));
-			test.log(Status.INFO, "Typing on: " + locator + " Entered Value is: " + value);
+			//test.log(Status.INFO, "Typing on: " + locator + " Entered Value is: " + value);
 		} else if (locator.endsWith("_class")) {
 			dropDown = driver.findElement(By.className(OR.getProperty(locator)));
 		} else if (locator.endsWith("_id")) {
@@ -184,7 +182,7 @@ public class Page {
 
 		Select select = new Select(dropDown);
 		select.selectByVisibleText(value);
-		test.log(Status.INFO, "Selecting from dropdown " + locator + " Entered Value is: " + value);
+		//test.log(Status.INFO, "Selecting from dropdown " + locator + " Entered Value is: " + value);
 	}
 
 	public static void verifyEquals(String expected, String actual) throws IOException {
@@ -195,8 +193,8 @@ public class Page {
 			Reporter.log("<br>" + "verification failure" + t.getMessage() + "</br>");
 			Reporter.log("<a target=\"_blank\" href=\"" + Utilities.screenshotPath + "\"><img src=\""
 					+ Utilities.screenshotPath + "\" height=200 width=200></img></a>");
-			test.log(Status.FAIL, "Verification got Failed with exception: " + t.getMessage());
-			test.fail("Screenshot", MediaEntityBuilder.createScreenCaptureFromPath(Utilities.screenshotPath).build());
+			//test.log(Status.FAIL, "Verification got Failed with exception: " + t.getMessage());
+			//test.fail("Screenshot", MediaEntityBuilder.createScreenCaptureFromPath(Utilities.screenshotPath).build());
 		}
 
 	}

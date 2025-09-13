@@ -1,1 +1,0 @@
-20:13:29.615 IST [main] DEBUG com.testbot.base.Page - Log4j2 configuration loaded !!!

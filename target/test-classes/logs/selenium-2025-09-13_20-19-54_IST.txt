@@ -1,0 +1,6 @@
+20:19:54.960 IST [main] DEBUG com.lws.base.Page - Log4j2 configuration loaded !!!
+20:19:54.972 IST [main] DEBUG com.lws.base.Page - Browser selected: chrome
+20:19:57.462 IST [main] DEBUG com.lws.base.Page - Chrome launched
+20:20:01.789 IST [main] INFO  com.lws.base.Page - Click on login button in homepage
+20:20:03.863 IST [main] INFO  com.lws.base.Page - Inside DoLogin
+20:20:04.885 IST [main] DEBUG com.lws.base.Page - Quiting the Driver

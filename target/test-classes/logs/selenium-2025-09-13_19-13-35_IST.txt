@@ -1,0 +1,4 @@
+19:13:35.731 IST [main] DEBUG com.lws.base.Page - Log4j2 configuration loaded !!!
+19:13:35.737 IST [main] DEBUG com.lws.base.Page - Browser selected: chrome
+19:13:40.364 IST [main] DEBUG com.lws.base.Page - Chrome launched
+19:13:44.412 IST [main] INFO  com.lws.base.Page - Click on login button in homepage

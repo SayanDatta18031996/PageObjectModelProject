@@ -1,0 +1,5 @@
+23:20:12.963 IST [main] DEBUG com.testbot.base.Page - Log4j2 configuration loaded !!!
+23:20:12.979 IST [main] DEBUG com.testbot.base.Page - Browser selected: chrome
+23:20:25.976 IST [main] DEBUG com.testbot.base.Page - Chrome launched
+23:20:31.455 IST [main] DEBUG com.testbot.base.Page - Click on login button in homepage
+23:20:35.425 IST [main] DEBUG com.testbot.base.Page - Quiting the Driver

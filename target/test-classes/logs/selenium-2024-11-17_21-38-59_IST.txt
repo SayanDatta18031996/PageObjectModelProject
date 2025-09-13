@@ -1,0 +1,2 @@
+21:38:59.856 IST [main] DEBUG com.testbot.base.Page - Log4j2 configuration loaded !!!
+21:39:18.954 IST [main] DEBUG com.testbot.base.Page - Click on login button in homepage

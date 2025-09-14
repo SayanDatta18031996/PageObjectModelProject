@@ -1,0 +1,8 @@
+23:34:25.320 IST [main] DEBUG com.lws.base.Page - Log4j2 configuration loaded !!!
+23:34:25.331 IST [main] DEBUG com.lws.base.Page - Browser selected: chrome
+23:34:30.693 IST [main] DEBUG com.lws.base.Page - Chrome launched
+23:34:33.991 IST [main] INFO  com.lws.base.Page - Click on login button in homepage
+23:34:35.466 IST [main] INFO  com.lws.base.Page - adding ID password and calling doLogin
+23:34:35.467 IST [main] INFO  com.lws.base.Page - Inside DoLogin
+23:34:37.012 IST [main] INFO  com.lws.base.Page - Returning ZohoAppPage
+23:34:37.136 IST [main] DEBUG com.lws.base.Page - Quiting the Driver

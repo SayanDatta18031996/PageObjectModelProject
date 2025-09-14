@@ -4,8 +4,8 @@ import com.lws.base.Page;
 import com.lws.pages.HomePage;
 import com.lws.pages.LoginPage;
 import com.lws.pages.ZohoAppPage;
-import com.lws.pages.accounts.AccountPage;
-import com.lws.pages.accounts.CreateAccountPage;
+import com.lws.pages.CRM.accounts.AccountPage;
+import com.lws.pages.CRM.accounts.CreateAccountPage;
 
 public class LoginTest {
 	public static void main(String[] args) throws InterruptedException {

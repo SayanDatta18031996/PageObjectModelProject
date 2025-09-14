@@ -1,4 +1,4 @@
-package com.lws.pages.accounts;
+package com.lws.pages.CRM.accounts;
 
 import com.lws.base.Page;
 

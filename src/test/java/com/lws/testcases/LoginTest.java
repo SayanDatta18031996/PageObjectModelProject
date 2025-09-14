@@ -11,7 +11,9 @@ public class LoginTest extends BaseTest  {
 	public void loginTest(){
 		HomePage homepage=new HomePage();
 		LoginPage lp=homepage.goToLogIn();
+		log.info("adding ID password and calling doLogin");
 		ZohoAppPage zohoapp=lp.doLogin("amibongbabu@gmail.com", "AutomationTest123!");
+		menu.Signout();
 	}
 
 }

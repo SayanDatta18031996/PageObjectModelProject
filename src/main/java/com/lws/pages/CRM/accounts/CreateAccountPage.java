@@ -9,7 +9,6 @@ public class CreateAccountPage extends Page {
 	//TopMenu menu=new TopMenu();
 	public void createAccount(String accountName) {
 		driver.findElement(By.cssSelector("#Crm_Accounts_ACCOUNTNAME_LInput")).sendKeys(accountName);
-		menu.Signout();
 	}
 	
 }
